@@ -1,0 +1,31 @@
+# Root
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/dist/
+backend/generated/
+backend/prisma/.env
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Build / test output
+coverage/
+dist/
+.next/
+
+# Misc
+.DS_Store
+npm-debug.log*

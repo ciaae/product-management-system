@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Product Management System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Gaming Mouse\",\n  \"description\": \"High precision gaming mouse with RGB lighting\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/api/products", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products"] }
+      }
+    },
+    {
+      "name": "Create Duplicate Product",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"gaming mouse\",\n  \"description\": \"Duplicate product\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/api/products", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products"] }
+      }
+    },
+    {
+      "name": "Get All Products",
+      "request": { "method": "GET", "url": { "raw": "http://localhost:3000/api/products", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products"] } }
+    },
+    {
+      "name": "Get Product By ID",
+      "request": { "method": "GET", "url": { "raw": "http://localhost:3000/api/products/{{productId}}", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products", "{{productId}}"] } }
+    },
+    {
+      "name": "Get Non-existing Product",
+      "request": { "method": "GET", "url": { "raw": "http://localhost:3000/api/products/does-not-exist", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products", "does-not-exist"] } }
+    },
+    {
+      "name": "Delete Product",
+      "request": { "method": "DELETE", "url": { "raw": "http://localhost:3000/api/products/{{productId}}", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products", "{{productId}}"] } }
+    },
+    {
+      "name": "Generate Product Tags",
+      "request": { "method": "POST", "url": { "raw": "http://localhost:3000/api/products/{{productId}}/generate-tags", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products", "{{productId}}", "generate-tags"] } }
+    },
+    {
+      "name": "Invalid Request Validation",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"\",\n  \"description\": \"\"\n}"
+        },
+        "url": { "raw": "http://localhost:3000/api/products", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "products"] }
+      }
+    }
+  ]
+}
