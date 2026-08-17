@@ -15,6 +15,11 @@ A full-stack product management application built with Node.js, TypeScript, Expr
 - Centralized backend validation and error handling
 - Production-ready structure for a 48-hour technical assignment
 
+## Live Demo
+```
+https://drive.google.com/file/d/1BQm8QJ56gWqolV1z1Ips0o7F8mx7Wc16/view?usp=drive_link
+```
+
 ## Tech Stack
 
 ### Backend
@@ -243,10 +248,6 @@ The application also performs case-insensitive duplicate checking to prevent var
 - gaming mouse
 - GAMING MOUSE
 
-## Live Demo
-```
-https://drive.google.com/file/d/1BQm8QJ56gWqolV1z1Ips0o7F8mx7Wc16/view?usp=drive_link
-```
 
 ## Remaining TODO
 
