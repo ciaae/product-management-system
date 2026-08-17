@@ -244,9 +244,9 @@ The application also performs case-insensitive duplicate checking to prevent var
 - GAMING MOUSE
 
 ## Live Demo
-
-No live demo is included in this local workspace version. If deployed later, add the URL here.
-
+```
+https://drive.google.com/file/d/1BQm8QJ56gWqolV1z1Ips0o7F8mx7Wc16/view?usp=drive_link
+```
 
 ## Remaining TODO
 
