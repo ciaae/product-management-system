@@ -118,26 +118,6 @@ npx prisma migrate dev --name init
 npx prisma generate
 ```
 
-## Environment Variables
-
-Create a `.env` file in the backend root using the example provided:
-
-```env
-PORT=3000
-DATABASE_URL="postgresql://username:password@localhost:5432/product_management"
-AI_API_KEY="your-openai-key"
-AI_MODEL="gpt-4o-mini"
-FRONTEND_URL="http://localhost:3001"
-```
-
-Frontend environment example:
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
-```
-
-> The AI API key is never exposed to the frontend and should not be committed to GitHub.
-
 ## Installation
 
 ### Backend
@@ -230,8 +210,6 @@ Use Postman to test the following required scenarios:
 7. Generate Product Tags
 8. Invalid Request Validation
 
-These scenarios should be documented with screenshots showing request and response payloads for the assignment submission.
-
 ## AI API Used
 
 This project uses the OpenAI API for tag generation. The backend calls the AI provider from the server side only. The API key is stored in environment variables and never exposed to the frontend.
@@ -265,62 +243,16 @@ The application also performs case-insensitive duplicate checking to prevent var
 - gaming mouse
 - GAMING MOUSE
 
-## Screenshots
-
-Add the Postman screenshots here or in a `docs/screenshots` folder before final submission.
-
-Recommended structure:
-
-```text
-docs/
-  ├── postman-create-product.png
-  ├── postman-duplicate-product.png
-  ├── postman-get-products.png
-  ├── postman-get-product-by-id.png
-  ├── postman-delete-product.png
-  ├── postman-generate-tags.png
-  └── postman-invalid-request.png
-```
-
-## Deployment Instructions
-
-### Frontend (Vercel)
-
-- Import the `frontend` folder into Vercel
-- Set `NEXT_PUBLIC_API_URL` to the deployed backend API URL
-
-### Backend (Render/Railway/Fly.io)
-
-- Deploy the `backend` service
-- Set `DATABASE_URL`, `AI_API_KEY`, and `PORT`
-- Add CORS configuration for the frontend origin
-
-### Database
-
-- Use a managed PostgreSQL service
-- Update `DATABASE_URL` in the production environment
-
 ## Live Demo
 
 No live demo is included in this local workspace version. If deployed later, add the URL here.
 
-## GitHub Preparation
-
-The project is arranged as a monorepo and is ready to be initialized as a Git repository with a clean `.gitignore` and no secret files committed.
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
 
 ## Remaining TODO
 
 - Install dependencies in a network-enabled environment
 - Run Prisma migration and generate client
 - Start backend and frontend locally
-- Capture Postman screenshots for assignment documentation
-- Optionally deploy to a live environment
 
 ## License
 
