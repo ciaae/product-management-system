@@ -77,7 +77,6 @@ product-management-ai/
 │   │   │   └── productSchema.ts
 │   │   └── services/
 │   │       └── productService.ts
-│   ├── .env.example
 │   ├── .gitignore
 │   ├── package.json
 │   ├── tsconfig.json
@@ -86,7 +85,6 @@ product-management-ai/
 │   ├── app/
 │   ├── components/
 │   ├── lib/
-│   ├── .env.example
 │   ├── package.json
 │   ├── tsconfig.json
 │   ├── next.config.mjs
@@ -94,8 +92,7 @@ product-management-ai/
 │   ├── tailwind.config.ts
 │   └── README.md
 ├── .gitignore
-├── README.md
-└── .env.example
+└── README.md
 ```
 
 ## Database Setup
