@@ -35,7 +35,4 @@
    - URL: http://localhost:3000/api/products
    - Body: { "name": "", "description": "" }
 
-9. Optional: health check
-   - GET http://localhost:3000/health
 
-Capture screenshots of the request builder and response body for each scenario.
